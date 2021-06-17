@@ -11,18 +11,47 @@
         <!--Shoot-->
         <scene sceneID="j1j-gx-GjL">
             <objects>
-                <viewController id="Hq0-bk-b2i" userLabel="Shoot" sceneMemberID="viewController">
+                <viewController id="Hq0-bk-b2i" userLabel="Shoot" customClass="ViewController" customModule="Catgram" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yTV-lC-wQp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="Gms-qC-r7U"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="seV-K5-mKi">
+                                <rect key="frame" x="191" y="433" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="拍照"/>
+                                <connections>
+                                    <action selector="takePhoto:" destination="Hq0-bk-b2i" eventType="touchUpInside" id="1rV-bq-3Sv"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="86" translatesAutoresizingMaskIntoConstraints="NO" id="6f6-f9-jeW">
+                                <rect key="frame" x="110" y="687" width="77" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4dc-bI-3uU">
+                                <rect key="frame" x="87" y="252" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x5b-QQ-SkD">
+                                <rect key="frame" x="168" y="471" width="77" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="从相册上传"/>
+                                <connections>
+                                    <action selector="selectFromPhotoLibrary:" destination="Hq0-bk-b2i" eventType="touchUpInside" id="e0x-cb-aS0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hfz-lZ-i9f"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="拍摄" id="bt9-NS-LR8"/>
+                    <connections>
+                        <outlet property="imageTake" destination="4dc-bI-3uU" id="18p-U3-Yuk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MlK-sl-ahK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1232" y="-172"/>
+            <point key="canvasLocation" x="1230.4347826086957" y="-172.09821428571428"/>
         </scene>
         <!--Posts-->
         <scene sceneID="MNb-KE-NZc">
@@ -31,7 +60,7 @@
                     <view key="view" contentMode="scaleToFill" id="nMf-bF-xlw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="KDS-90-CqB"/>
+                        <viewLayoutGuide key="safeArea" id="2TG-UN-2hu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="帖子" id="AUO-FG-bcL"/>
@@ -70,7 +99,7 @@
                                 </items>
                             </navigationBar>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="ooM-Za-AE2"/>
+                        <viewLayoutGuide key="safeArea" id="ttU-0X-bBi"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="列表" id="El5-OA-bAv"/>

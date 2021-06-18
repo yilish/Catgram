@@ -35,4 +35,22 @@ extension PostViewController {
        }
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+            let headerView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: tableView.frame.width, height: 36))
+            
+            let label = UILabel()
+            label.frame = CGRect.init(x: 5, y: 5, width: headerView.frame.width-10, height: headerView.frame.height-10)
+            label.text = "𝕮𝖆𝖙𝖌𝖗𝖆𝖒"
+            label.font = .systemFont(ofSize: 24)
+            label.textAlignment = .center
+            
+            headerView.addSubview(label)
+            
+            return headerView
+        }
+    
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+            return 36
+        }
 }

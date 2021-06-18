@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8428CE72267CBD150047FC99 /* Catgram in Resources */ = {isa = PBXBuildFile; fileRef = 8428CE71267CBD150047FC99 /* Catgram */; };
+		8428CE83267CBD370047FC99 /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8428CE79267CBD2E0047FC99 /* Posts.swift */; };
+		8428CE8A267CBD3D0047FC99 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8428CE7A267CBD2E0047FC99 /* PostViewController.swift */; };
+		8428CE97267CC0850047FC99 /* PostListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8428CE96267CC0850047FC99 /* PostListCell.swift */; };
 		84ED2950267B1F440079975D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ED294F267B1F440079975D /* AppDelegate.swift */; };
 		84ED2952267B1F440079975D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ED2951267B1F440079975D /* SceneDelegate.swift */; };
 		84ED2954267B1F440079975D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ED2953267B1F440079975D /* ViewController.swift */; };
@@ -41,6 +45,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8428CE71267CBD150047FC99 /* Catgram */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Catgram; sourceTree = SOURCE_ROOT; };
+		8428CE79267CBD2E0047FC99 /* Posts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Posts.swift; path = Catgram/Posts.swift; sourceTree = SOURCE_ROOT; };
+		8428CE7A267CBD2E0047FC99 /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostViewController.swift; path = Catgram/PostViewController.swift; sourceTree = SOURCE_ROOT; };
+		8428CE96267CC0850047FC99 /* PostListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListCell.swift; sourceTree = "<group>"; };
 		84ED294C267B1F440079975D /* Catgram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Catgram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84ED294F267B1F440079975D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84ED2951267B1F440079975D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -111,11 +119,14 @@
 		84ED294E267B1F440079975D /* Catgram */ = {
 			isa = PBXGroup;
 			children = (
+				8428CE7A267CBD2E0047FC99 /* PostViewController.swift */,
+				8428CE79267CBD2E0047FC99 /* Posts.swift */,
 				84ED294F267B1F440079975D /* AppDelegate.swift */,
 				84ED2951267B1F440079975D /* SceneDelegate.swift */,
 				84ED2953267B1F440079975D /* ViewController.swift */,
 				84ED2955267B1F440079975D /* Main.storyboard */,
 				84ED298A267B206E0079975D /* Posts.storyboard */,
+				8428CE96267CC0850047FC99 /* PostListCell.swift */,
 				84ED2958267B1F450079975D /* Assets.xcassets */,
 				84ED295A267B1F450079975D /* LaunchScreen.storyboard */,
 				84ED295D267B1F450079975D /* Info.plist */,
@@ -132,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				84ED2966267B1F450079975D /* CatgramTests.swift */,
+				8428CE71267CBD150047FC99 /* Catgram */,
 				84ED2968267B1F450079975D /* Info.plist */,
 			);
 			path = CatgramTests;
@@ -260,6 +272,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8428CE72267CBD150047FC99 /* Catgram in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,10 +293,13 @@
 				84ED2954267B1F440079975D /* ViewController.swift in Sources */,
 				CCCDAFD7267C80730054279D /* Cat.swift in Sources */,
 				84ED2950267B1F440079975D /* AppDelegate.swift in Sources */,
+				8428CE97267CC0850047FC99 /* PostListCell.swift in Sources */,
 				CCCDAFCC267C6ACF0054279D /* CatListCell.swift in Sources */,
+				8428CE8A267CBD3D0047FC99 /* PostViewController.swift in Sources */,
 				CCCDAFDC267C8A0F0054279D /* CatDetailView.swift in Sources */,
 				CCCDAFD2267C6DE40054279D /* CircularView.swift in Sources */,
 				84ED2952267B1F440079975D /* SceneDelegate.swift in Sources */,
+				8428CE83267CBD370047FC99 /* Posts.swift in Sources */,
 				CCCDAFC7267C69B70054279D /* CatListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

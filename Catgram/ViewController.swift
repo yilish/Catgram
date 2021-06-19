@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import Model
 class ViewController: UIViewController, UINavigationControllerDelegate {
     var imagePicker: UIImagePickerController!
     @IBOutlet weak var imageTake: UIImageView!
@@ -48,7 +48,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
             print("Image not found!")
             return
         }
-        UIImageWriteToSavedPhotosAlbum(selectedImage, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
+        UIImageWriteToSavedPhotosAlbum(selectedImage, self, #selector(image(_:didFinishSavingWithError:contextInf o:)), nil)
     }
 
     

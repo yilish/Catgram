@@ -6,3 +6,6 @@
 //
 
 import Foundation
+class Model {
+    public var a = "it's a test.";
+}

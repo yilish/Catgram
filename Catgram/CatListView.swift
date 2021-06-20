@@ -8,6 +8,8 @@
 import UIKit
 
 class CatListViewController : UITableViewController {
+    @IBOutlet weak var navigate: UINavigationItem!
+    
     static let showDetailSegueIdentifier = "CatDetailSegue"
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -18,6 +20,10 @@ class CatListViewController : UITableViewController {
             let cat = Cat.testData[indexPath.row]
             destination.configure(with: cat)
         }
+    }
+    
+    override func viewDidLoad() {
+        navigate.title = "𝕮𝖆𝖙𝖌𝖗𝖆𝖒"
     }
 }
 

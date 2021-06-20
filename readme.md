@@ -26,11 +26,11 @@
 
 * 移动社交平台，以微博、Twitter为主
 
-![uml1](/Users/plusone/Downloads/uml1.jpg)
+![uml1](./docimg/uml1.jpg)
 
 * 现存的网页猫咪论坛
 
-![uml2](/Users/plusone/Downloads/uml2.jpg)
+![uml2](./docimg/uml2.jpg)
 
 
 

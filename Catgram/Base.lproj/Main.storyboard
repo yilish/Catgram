@@ -76,6 +76,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="OMq-dI-3Dc"/>
+                    <connections>
+                        <outlet property="navigate" destination="OMq-dI-3Dc" id="NHn-kJ-fef"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fzq-WI-PlG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -157,6 +160,7 @@
                         <outlet property="catImage" destination="gWF-o9-8GR" id="MKu-oT-EaU"/>
                         <outlet property="catLocation" destination="Bq0-O0-5UR" id="mgm-up-09B"/>
                         <outlet property="catName" destination="ooG-oT-1BB" id="YJM-0F-kw8"/>
+                        <outlet property="navigate" destination="lfb-s0-l36" id="eJ6-Ye-cor"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C2c-Ar-7Ek" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -230,7 +234,7 @@
                         <viewLayoutGuide key="safeArea" id="hfz-lZ-i9f"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="拍摄" id="bt9-NS-LR8"/>
+                    <tabBarItem key="tabBarItem" title="拍摄" image="plus.circle.fill" catalog="system" selectedImage="plus.circle.fill" id="bt9-NS-LR8"/>
                     <connections>
                         <outlet property="imageTake" destination="4dc-bI-3uU" id="18p-U3-Yuk"/>
                     </connections>
@@ -350,7 +354,7 @@
                             </tableViewCell>
                         </prototypes>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="帖子" id="AUO-FG-bcL"/>
+                    <tabBarItem key="tabBarItem" title="帖子" image="text.bubble.fill" catalog="system" selectedImage="text.bubble.fill" id="AUO-FG-bcL"/>
                     <navigationItem key="navigationItem" id="CvC-RM-QbM"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zrt-Zs-6sn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -360,15 +364,15 @@
         <!--Tab Bar Controller-->
         <scene sceneID="145-da-87c">
             <objects>
-                <tabBarController id="IOI-j9-uKY" sceneMemberID="viewController">
+                <tabBarController id="IOI-j9-uKY" customClass="TabBarController" customModule="Catgram" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tWV-jO-Dow">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="Hq0-bk-b2i" kind="relationship" relationship="viewControllers" id="LcZ-Uc-vSU"/>
                         <segue destination="q4y-rh-UWZ" kind="relationship" relationship="viewControllers" id="QdG-ZG-T0u"/>
+                        <segue destination="Hq0-bk-b2i" kind="relationship" relationship="viewControllers" id="LcZ-Uc-vSU"/>
                         <segue destination="NV6-JT-QFQ" kind="relationship" relationship="viewControllers" id="2ss-cd-eFa"/>
                     </connections>
                 </tabBarController>
@@ -380,7 +384,7 @@
         <scene sceneID="WHn-6L-ybT">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NV6-JT-QFQ" userLabel="List" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="列表" id="PIi-SV-Tmz"/>
+                    <tabBarItem key="tabBarItem" title="列表" image="list.bullet" catalog="system" selectedImage="list.bullet" id="PIi-SV-Tmz"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="CN6-aT-5GT">
                         <rect key="frame" x="0.0" y="44" width="390" height="44"/>
@@ -401,9 +405,12 @@
         <image name="cat1-happy" width="500" height="472"/>
         <image name="face.smiling" catalog="system" width="128" height="121"/>
         <image name="heart" catalog="system" width="128" height="109"/>
+        <image name="list.bullet" catalog="system" width="128" height="88"/>
         <image name="location.fill.viewfinder" catalog="system" width="128" height="115"/>
         <image name="mao3" width="100" height="100"/>
+        <image name="plus.circle.fill" catalog="system" width="128" height="121"/>
         <image name="square.and.pencil" catalog="system" width="128" height="115"/>
+        <image name="text.bubble.fill" catalog="system" width="128" height="110"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

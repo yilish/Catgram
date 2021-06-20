@@ -11,11 +11,13 @@
       "size" : "20x20"
     },
     {
+      "filename" : "logo58x58.jpg",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "29x29"
     },
     {
+      "filename" : "logo87x87.jpg",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "29x29"
@@ -31,11 +33,13 @@
       "size" : "40x40"
     },
     {
+      "filename" : "logo120x120.jpg",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "60x60"
     },
     {
+      "filename" : "logo180x180.jpg",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "60x60"

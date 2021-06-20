@@ -1,4 +1,4 @@
-# iOS dev 2020-2021 Spring Final -Catgram
+# iOS dev 2020-2021 Spring Final - Catgram
 
 ## 产品简介
 
@@ -76,7 +76,7 @@ Catgram 平台对于以上平台的缺点有所补充，虽然使用的人数只
 
 帖子视图展示了最近上传的猫咪照片，包括了猫咪心情预测结果以及上传者留言，用户可以对帖子进行点赞或分享操作。
 
-![post](docimg/post.png)
+<img src='docimg/post.png' width='30%'>
 
 ### 发帖视图
 
@@ -86,7 +86,7 @@ Catgram 平台对于以上平台的缺点有所补充，虽然使用的人数只
 
 下图为上传一张模拟器自带的图片，按照预期，这张图片上传时将会提示用户确认照片是否内含有猫咪，并提示用户没有猫咪的图片将有可能被举报并被管理员删除。
 
-![add](docimg/add.png)
+<img src='docimg/add.png' width='30%'>
 
 ### 列表视图
 
@@ -94,11 +94,11 @@ Catgram 平台对于以上平台的缺点有所补充，虽然使用的人数只
 
 猫咪列表的界面如下：
 
-![列表](docimg/list.png)
+<img src='docimg/list.png' width='30%'>
 
 猫咪详情页面如下：
 
-![detailed](docimg/sleep.png)
+<img src='docimg/sleep.png' width='30%'>
 
 
 
@@ -113,5 +113,5 @@ Catgram 平台对于以上平台的缺点有所补充，虽然使用的人数只
 2. 使用Python下的Turi进行模型训练。使用简单的二分类ResNet50模型，即：输入为224 * 224 * 3的tensor，输出为1 * 2的tensor，即为猫开心和不开心的概率。拟训练300个epoch。
 3. 将用Turi训练好的模型导出，导出模型的参数应为mlmodel格式。
 4. 在项目中载入训练好的模型，其会自动生成一个模型类。
-5. 在视图类中创建模型类的实例进行推理即可。
+5. 创建模型类的实例对输入的图片进行推理即可。
 
